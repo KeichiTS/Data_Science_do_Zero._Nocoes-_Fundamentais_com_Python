@@ -112,5 +112,12 @@ user_ids_by_interest = defaultdict(list)
 
 for user_id, interest in interests:
     user_ids_by_interest[interest].append(user_id)
+
+#Agora de usuário para interesses
+
+#As chaves são user_ids, os valores são listas de interesses do user_id em questão
+interests_by_user_id = defaultdict(list)
+
+for user_id, interest in interests:
+    interests_by_user_id[user_id].append(interest)
     
-print(user_ids_by_interest)
